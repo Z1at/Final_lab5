@@ -1,14 +1,14 @@
-package data;
+package NikandrovLab5.data;
 
-public enum Government {
-    CORPORATOCRACY,
-    MATRIARCHY,
-    OLIGARCHY,
-    TIMOCRACY;
+public enum StandardOfLiving {
+    VERY_HIGH,
+    LOW,
+    VERY_LOW,
+    NIGHTMARE;
 
     public static boolean isPresent(String data) {
         try {
-            Government.valueOf(data);
+            StandardOfLiving.valueOf(data);
             return true;
         } catch (IllegalArgumentException e) {
             return false;

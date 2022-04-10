@@ -1,14 +1,14 @@
-package data;
+package NikandrovLab5.data;
 
-public enum Climate {
-    RAIN_FOREST,
-    TROPICAL_SAVANNA,
-    STEPPE,
-    DESERT;
+public enum Government {
+    CORPORATOCRACY,
+    MATRIARCHY,
+    OLIGARCHY,
+    TIMOCRACY;
 
     public static boolean isPresent(String data) {
         try {
-            Climate.valueOf(data);
+            Government.valueOf(data);
             return true;
         } catch (IllegalArgumentException e) {
             return false;

@@ -1,14 +1,14 @@
-package data;
+package NikandrovLab5.data;
 
-public enum StandardOfLiving {
-    VERY_HIGH,
-    LOW,
-    VERY_LOW,
-    NIGHTMARE;
+public enum Climate {
+    RAIN_FOREST,
+    TROPICAL_SAVANNA,
+    STEPPE,
+    DESERT;
 
     public static boolean isPresent(String data) {
         try {
-            StandardOfLiving.valueOf(data);
+            Climate.valueOf(data);
             return true;
         } catch (IllegalArgumentException e) {
             return false;

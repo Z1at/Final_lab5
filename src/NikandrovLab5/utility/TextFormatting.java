@@ -1,4 +1,4 @@
-package utility;
+package NikandrovLab5.utility;
 
 /**
  * Class for format text for highlight errors and informational messages
@@ -23,6 +23,7 @@ public class TextFormatting {
         return ANSI_BLUE + text + ANSI_RESET;
     }
 
-    public static String getYellowText(String text) { return ANSI_YELLOW + text + ANSI_RESET; }
-
+    public static String getYellowText(String text) {
+        return ANSI_YELLOW + text + ANSI_RESET;
+    }
 }

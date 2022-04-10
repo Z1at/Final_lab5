@@ -1,4 +1,4 @@
-package data;
+package NikandrovLab5.data;
 
 import java.time.LocalDate;
 
@@ -10,7 +10,7 @@ public class Human {
     private final Double height; //Значение поля должно быть больше 0
     private final java.time.LocalDate birthday;
 
-    public Human(String name, Double height){
+    public Human(String name, Double height) {
         this.name = name;
         this.height = height;
         this.birthday = java.time.LocalDate.now();

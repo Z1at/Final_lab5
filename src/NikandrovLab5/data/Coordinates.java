@@ -1,4 +1,4 @@
-package data;
+package NikandrovLab5.data;
 
 /**
  * Source class
@@ -6,7 +6,8 @@ package data;
 public class Coordinates {
     private final Float x; //Поле не может быть null
     private final Long y; //Поле не может быть null
-    public Coordinates(Float x, Long y){
+
+    public Coordinates(Float x, Long y) {
         this.x = x;
         this.y = y;
     }

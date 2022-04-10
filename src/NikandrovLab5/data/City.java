@@ -1,4 +1,4 @@
-package data;
+package NikandrovLab5.data;
 
 import java.time.ZonedDateTime;
 import java.util.Objects;
@@ -20,22 +20,23 @@ public class City {
     private Human governor; //Поле не может быть null
 
     /**
-    * Class constructor
-    * @param aId - city id
-    * @param aName - name of city
-    * @param aCoordinates - coordinates of city
-    * @param aCreationDate - creation date of city
-    * @param aArea - area of city
-    * @param aPopulation - number of people in the city
-    * @param aMetersAboveSeaLevel - number if meters above sea level
-    * @param aClimate - the climate of the city
-    * @param aGovernment - government of city
-    * @param aStandardOfLiving - standard of living in city
-    * @param aGovernor - governor of city
-    */
+     * Class constructor
+     *
+     * @param aId                  - city id
+     * @param aName                - name of city
+     * @param aCoordinates         - coordinates of city
+     * @param aCreationDate        - creation date of city
+     * @param aArea                - area of city
+     * @param aPopulation          - number of people in the city
+     * @param aMetersAboveSeaLevel - number if meters above sea level
+     * @param aClimate             - the climate of the city
+     * @param aGovernment          - government of city
+     * @param aStandardOfLiving    - standard of living in city
+     * @param aGovernor            - governor of city
+     */
     public City(int aId, String aName, Coordinates aCoordinates, java.time.ZonedDateTime aCreationDate, double aArea,
                 Long aPopulation, Integer aMetersAboveSeaLevel, Climate aClimate, Government aGovernment,
-                StandardOfLiving aStandardOfLiving, Human aGovernor){
+                StandardOfLiving aStandardOfLiving, Human aGovernor) {
         id = aId;
         name = aName;
         coordinates = aCoordinates;
@@ -131,7 +132,7 @@ public class City {
 
     @Override
     public String toString() {
-        return  "id = " + id + '\n' +
+        return "id = " + id + '\n' +
                 "name = " + name + '\n' +
                 "coordinates = " + "(" + coordinates.getX() + ", " + coordinates.getY() + ")" + '\n' +
                 "creationDate = " + creationDate + '\n' +
