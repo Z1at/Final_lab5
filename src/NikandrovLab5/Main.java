@@ -1,3 +1,5 @@
+package NikandrovLab5;
+
 import NikandrovLab5.commands.Operations;
 import NikandrovLab5.data.City;
 import NikandrovLab5.utility.Collection;
@@ -7,7 +9,7 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
- * Main class
+ * NikandrovLab5.Main class
  */
 public class Main {
     public static void main(String[] args) {
